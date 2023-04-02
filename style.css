@@ -1,0 +1,154 @@
+/*general*/
+body {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	padding-top: 60px;
+	/*hack otros navegadores no chrome*/
+	overflow-y: auto;
+	overflow-y: overlay;
+}
+
+
+
+/*seccion inicial*/
+.portada {
+	height: 100vh;
+	width: 100vw;
+	background: black
+		center center no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.portada .texto-inicial {
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.portada .texto-inicial * {
+	text-align: center;
+	margin: 0;
+}
+
+/*seccion cards*/
+.cards {
+	min-height: calc(100vh - 60px);
+	background: teal;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.cards .card {
+	background: white;
+	max-width: 20%;
+	min-width: 150px;
+	padding: 10px;
+	margin: 1%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.cards .card .card-body img {
+	width: 100%;
+	height: 35vh;
+	/*hack imagen no deformada*/
+	object-fit: cover;
+}
+
+.cards .card .card-body h3 {
+	color: teal;
+}
+
+.cards .card .card-body p {
+	text-align: right;
+	font-family: "Hind", serif;
+}
+
+.cards .card .card-action {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.cards .card .card-action button {
+	background: none;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	border: none;
+	color: darkorange;
+	font-weight: bold;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.cards .card .card-action button:hover {
+	background: rgba(255, 140, 0, 0.05);
+}
+
+/*seccion form*/
+.login {
+	height: calc(100vh - 60px);
+	background: teal;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login form {
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.login form label {
+	font-size: 0.5rem;
+	margin-bottom: 5px;
+}
+
+.login form a {
+	margin-top: 20px;
+	text-decoration: none;
+	color: white;
+	background: blue;
+	padding: 5px;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.login form a:hover {
+	background: #4444ff;
+	font-size: 18px;
+}
+
+.login form .form-line {
+	display: flex;
+	justify-content: stretch;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.login form .form-line .item {
+	display: flex;
+	flex-direction: column;
+}
+
+/*footer*/
+.footer {
+	background: rgba(57, 57, 57, 1);
+	padding: 20px;
+	color: #fff;
+	height: 60px;
+}
+
+
+    
+      
